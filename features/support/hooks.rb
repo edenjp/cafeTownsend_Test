@@ -5,7 +5,7 @@ Before do
   page.current_window.resize_to(1800,1000)
   @login.load
   @login.login_site
-  sleep(2)
+  sleep(3)
 end
 
 AfterStep { sleep(1) }
