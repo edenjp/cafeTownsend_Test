@@ -1,4 +1,4 @@
-![cafeTownsend Logo](logo.jpg)
+![cafeTownsend Logo](logo.png)
 # cafeTownsend_Test
 This project was created to perform web application tests using selenium.
 
