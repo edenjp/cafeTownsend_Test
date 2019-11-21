@@ -1,0 +1,4 @@
+base: --no-source --color --format pretty -p html_report
+default: --profile qa
+qa: --profile base PROFILE=qa
+html_report: --format progress --format html --out=report/features_report.html
