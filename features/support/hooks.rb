@@ -1,14 +1,14 @@
 Before do
   @login = LoginPage.new
   @home = HomePage.new
-  @createAndEdit = CreateAndEditEmployee.new
+  @createAndEdit = Employee.new
   page.current_window.resize_to(1800,1000)
   @login.load
   @login.login_site
-  sleep(3)
+  sleep(2)
 end
 
-AfterStep { sleep(1) }
+AfterStep { sleep(3) }
 
 After do |scenario|
   scenarioName = scenario.name.tr(" ", "_").downcase!

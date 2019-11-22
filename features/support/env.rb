@@ -20,4 +20,3 @@ $profile = ENV['PROFILE']
 
 $firstname =  "0" + (Faker::Name.first_name).to_s
 $lastname =  "Test" + (Faker::Name.last_name).to_s
-

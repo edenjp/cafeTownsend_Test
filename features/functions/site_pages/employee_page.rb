@@ -1,6 +1,6 @@
 require "capybara"
 
-class CreateAndEditEmployee < SitePrism::Page
+class Employee < SitePrism::Page
 
   set_url "http://cafetownsend-angular-rails.herokuapp.com/employees/new"
 
@@ -9,9 +9,7 @@ class CreateAndEditEmployee < SitePrism::Page
   element :startDate_field, '[ng-model="selectedEmployee.startDate"]'
   element :email_field, '[type="email"]'
   element :button_add, '[type="submit"]', match: :first
-
-
-
+  element :button_back, '.bBack'
 		
   def fill_form_to_employee_data(firstname, lastname)
 		firstName_field.set firstname
@@ -29,6 +27,10 @@ class CreateAndEditEmployee < SitePrism::Page
 		lastName_field.native.clear 
     startDate_field.native.clear
     email_field.native.clear 
+  end
+
+  def click_back_button
+    button_back.click
   end
 
 end

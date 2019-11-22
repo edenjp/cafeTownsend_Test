@@ -1,7 +1,7 @@
 Feature: Café Townsend Test 
 	Create new Employee Tests
 
-@createUser 
+@create
 Scenario: Creating a new employee with success
 
   Given the page to create employee    

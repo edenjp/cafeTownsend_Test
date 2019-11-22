@@ -17,7 +17,7 @@ class HomePage < SitePrism::Page
 		button_edit.click
 	end
 	
-	def goToEditPage
-		button_edit.click
+	def goToDeletePage
+		button_delete.click
 	end
 end
