@@ -1,6 +1,8 @@
 # NOTES:
 
 In this automation 07 test scenarios were coveraded, using 25 steps to do it. The scenarios are:  
+
+
 Login page  
  - [x] Login with valid user and password 
 
@@ -32,5 +34,5 @@ The following tests were performed manually:
 ## Sugestions to improvement  
  - One of the things that I missed while I was creating this automation was the tags at the HTML, this made some validations very difficult to do.  
  - The list does not have an ordination.  
- - The final user feedbacks could be improved, the feedback and confirmation to delete are inside a alert and this usually is associated to undesired pop ups, this can make a user experience a bad thing.  
+ - The final user feedbacks could be improved, the feedback and confirmation to delete are inside an alert and this usually is associated to undesired pop ups, this can make the user experience a bad thing.  
  - There is no feedback for the main actions.  
