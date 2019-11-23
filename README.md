@@ -45,7 +45,7 @@ All the tests results are saved inside the *report* folder.
 Before running the tests, please install:
 
 [ruby](https://rvm.io/rvm/install)  
-[bundle](https://bundler.io/)
+[bundle](https://bundler.io/)  
 [ChromeDriver](https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/)  
 [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 
