@@ -22,11 +22,10 @@ end
 Then("the first employee from list will be updated") do
 	@employees_final_number = page.evaluate_script("$('#employee-list li').length")
 	@employee_list = page.evaluate_script("$('#employee-list li').text()")
-	@new_first_employee_from_list = page.evaluate_script("$('#employee-list li').first().text()")
 	@updated_first_employee = $firstname + " " + $lastname
 	
   expect(@employees_number).to be == @employees_final_number
-	expect(@first_employee_from_list.to_s).not_to eql @new_first_employee_from_list.to_s
+	expect(@first_employee_from_list.to_s).not_to eql @updated_first_employee.to_s
 	expect(@employee_list.to_s).to include  @updated_first_employee
 end
 

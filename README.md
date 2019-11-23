@@ -72,8 +72,9 @@ By default:
 - the tests will run using Google chrome;
 - the report will be saved in HTML format;
 - the terminal shows a short version of the scenarios.
+- screenshots will be saved after every test result
 
-If you want to run using Chrome Headless it is necessary to change the default tag. Check some examples:
+If you want to run using Chrome Headless it is necessary to change the default tag inside de file `config/cucumber.yml`. Check some examples:
 
 To use Chrome Headless:
 ```
@@ -104,5 +105,5 @@ If you want to run a specific test, run:
 ```
 $ cucumber -t @createdtag                             
 ```
-**Note:** *createdtag* is the given name to your test suite. Example: *@createUser or @deleteUser*.
+**Note:** *createdtag* is the given name to your test suite. Example: *@create or @delete*.
 

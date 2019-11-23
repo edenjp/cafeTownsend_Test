@@ -8,10 +8,10 @@ class LoginPage < SitePrism::Page
 	element :password_field, '[type="password"]'
 	element :login_button, '[type="submit"]'
 
-	def login_site
-		username_field.set "Luke"
-		password_field.set "Skywalker"
+	def login_site (username, password)
+		username_field.set username
+		password_field.set password
 		login_button.click
 	end
-
+	
 end

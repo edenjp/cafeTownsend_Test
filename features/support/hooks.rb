@@ -1,10 +1,10 @@
-Before do
+Before('@create,@edit, @delete, @logout') do
   @login = LoginPage.new
   @home = HomePage.new
   @createAndEdit = Employee.new
   page.current_window.resize_to(1800,1000)
   @login.load
-  @login.login_site
+  @login.login_site("Luke", "Skywalker")
   sleep(2)
 end
 

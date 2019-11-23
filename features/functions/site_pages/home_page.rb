@@ -1,7 +1,6 @@
 require "capybara"
 
 class HomePage < SitePrism::Page
-
 	set_url "http://cafetownsend-angular-rails.herokuapp.com/employees"
 
 	element :button_create, '#bAdd'
@@ -20,4 +19,5 @@ class HomePage < SitePrism::Page
 	def goToDeletePage
 		button_delete.click
 	end
+	
 end
