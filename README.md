@@ -93,7 +93,7 @@ default: --format progress -p html -p chrome_headless
 
 ## Running tests
 
-You can run the tests any time. All you need to do is:
+You can run the tests any time. All you need to do is run de command bellow:
 
 ```
 $ cucumber                                           
