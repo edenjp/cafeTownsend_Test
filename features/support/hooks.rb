@@ -1,4 +1,4 @@
-Before('@create,@edit, @delete, @logout') do
+Before('@create or @edit or @delete or @logout') do
   @login = LoginPage.new
   @home = HomePage.new
   @createAndEdit = Employee.new

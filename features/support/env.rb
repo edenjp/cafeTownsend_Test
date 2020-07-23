@@ -5,6 +5,7 @@ require 'site_prism'
 require 'rspec'
 require 'faker'
 require 'capybara/poltergeist'
+require 'webdrivers'
 
 World(Capybara::DSL)
 
